@@ -219,12 +219,54 @@
         "grid-mobile": "2",
         "colors": "white"
       }
+    },
+    "image_with_text_LFNDP7": {
+      "type": "image-with-text",
+      "settings": {
+        "layout": "left",
+        "title": "Bild mit Text",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "text_alignment": "center",
+        "text_overlapping_image": false,
+        "button_link": "",
+        "button_label": "",
+        "buttons_style": "filled",
+        "override_button_colors": false,
+        "button_background_color": "#E68819",
+        "button_text_color": "#ffffff",
+        "section-width": "full",
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "colors": "light"
+      }
+    },
+    "image_with_text_gWgMfX": {
+      "type": "image-with-text",
+      "settings": {
+        "layout": "right",
+        "title": "Bild mit Text",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "text_alignment": "center",
+        "text_overlapping_image": false,
+        "button_link": "",
+        "button_label": "",
+        "buttons_style": "filled",
+        "override_button_colors": false,
+        "button_background_color": "#E68819",
+        "button_text_color": "#ffffff",
+        "section-width": "full",
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "colors": "light"
+      }
     }
   },
   "order": [
     "slideshow_RRiMqQ",
     "3643d38b-24f2-4040-ab67-4b4b44a63aab",
     "collage_cQx9KL",
-    "featured_collection_7yF9q4"
+    "featured_collection_7yF9q4",
+    "image_with_text_LFNDP7",
+    "image_with_text_gWgMfX"
   ]
 }
