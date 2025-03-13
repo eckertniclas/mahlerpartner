@@ -81,7 +81,7 @@
           "settings": {
             "desktop_image": "shopify://shop_images/Shop-CAT-1080-x-1080-2024---Q3---Media-Grid-Footwear-min_bb1419d5-653d-4ada-a59e-457c5198a992.webp",
             "desktop_position": "md-min-align-bottom md-min-justify-left",
-            "mobile_position": "md-max-align-bottom md-max-justify-right",
+            "mobile_position": "md-max-align-bottom md-max-justify-left",
             "heading": "Schuhwerk",
             "heading_size": 30,
             "url": "",
@@ -90,7 +90,7 @@
             "override_button_colors": true,
             "button_background_color": "#ffffff",
             "button_color": "#000000",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "overlay_color": "rgba(0,0,0,0)"
           }
         },
@@ -108,7 +108,7 @@
             "override_button_colors": true,
             "button_background_color": "#ffffff",
             "button_color": "#000000",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "overlay_color": "rgba(0,0,0,0)"
           }
         },
@@ -126,7 +126,7 @@
             "override_button_colors": true,
             "button_background_color": "#ffffff",
             "button_color": "#000000",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "overlay_color": "rgba(0,0,0,0)"
           }
         },
@@ -144,7 +144,7 @@
             "override_button_colors": true,
             "button_background_color": "#ffffff",
             "button_color": "#000000",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "overlay_color": "rgba(0,0,0,0)"
           }
         },
@@ -162,7 +162,7 @@
             "override_button_colors": true,
             "button_background_color": "#ffffff",
             "button_color": "#000000",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "overlay_color": "rgba(0,0,0,0)"
           }
         }
@@ -196,11 +196,35 @@
         "height_6": "4",
         "color_scheme": "white"
       }
+    },
+    "featured_collection_7yF9q4": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".section-title--wrapper {align-items: flex-start;}"
+      ],
+      "settings": {
+        "title": "Unsere Bestseller",
+        "description": "",
+        "collection": "bestseller",
+        "override_button_colors": false,
+        "button_background_color": "#E68819",
+        "button_text_color": "#ffffff",
+        "show_view_all": false,
+        "buttons_style": "filled",
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "layout_style": "grid",
+        "products_to_show": 8,
+        "grid-desktop": 4,
+        "grid-mobile": "2",
+        "colors": "white"
+      }
     }
   },
   "order": [
     "slideshow_RRiMqQ",
     "3643d38b-24f2-4040-ab67-4b4b44a63aab",
-    "collage_cQx9KL"
+    "collage_cQx9KL",
+    "featured_collection_7yF9q4"
   ]
 }
