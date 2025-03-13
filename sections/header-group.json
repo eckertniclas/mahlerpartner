@@ -41,6 +41,9 @@
         "announcement_Rpz388",
         "announcement_d4QgAz"
       ],
+      "custom_css": [
+        ".announcement-item p {margin:0px;}"
+      ],
       "settings": {
         "background_color": "#000000",
         "text_color": "#FFFFFF",
