@@ -54,7 +54,7 @@
       "type": "featured-collection",
       "custom_css": [
         ".quick-add-wrapper {display: none;}",
-        ".section-title {text-align:left important;}"
+        ".section-title--wrapper{align-items:left !important;}"
       ],
       "settings": {
         "title": "Die neusten Produkte",
