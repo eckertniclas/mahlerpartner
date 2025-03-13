@@ -15,7 +15,7 @@
         "image_F7RqmF": {
           "type": "image",
           "settings": {
-            "title": "Dein Shop\nfür Merch",
+            "title": "Dein Shop für Merch",
             "text": "Entdecke jetzt unser Sortiment aus Caps, Toys, Fashion und vielem mehr",
             "first_button_link": "shopify://collections/all",
             "first_button_label": "Jetzt entdecken",
@@ -28,7 +28,7 @@
             "image": "shopify://shop_images/cat_336.jpg.imagethumb.1920.jpg",
             "text_position": "center_left",
             "desktop-caption-heading-size": 60,
-            "desktop-caption-body-text-size": 30,
+            "desktop-caption-body-text-size": 16,
             "mobile_text_position": "center",
             "mobile-caption-heading-size": 36,
             "mobile-caption-body-text-size": 16,
