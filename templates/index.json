@@ -15,10 +15,10 @@
         "image_F7RqmF": {
           "type": "image",
           "settings": {
-            "title": "Make a great \nfirst impression",
-            "text": "",
+            "title": "Dein Shop\nfür Merch",
+            "text": "Entdecke jetzt unser Sortiment aus Caps, Toys, Fashion und vielem mehr",
             "first_button_link": "shopify://collections/all",
-            "first_button_label": "Shop now",
+            "first_button_label": "Jetzt entdecken",
             "second_button_link": "",
             "second_button_label": "",
             "buttons_style": "filled",
@@ -34,7 +34,7 @@
             "mobile-caption-body-text-size": 16,
             "caption-text": "#ffffff",
             "image_overlay": "#242424",
-            "image_overlay_opacity": 0
+            "image_overlay_opacity": 40
           }
         }
       },
