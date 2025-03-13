@@ -72,10 +72,135 @@
         "grid-mobile": "2",
         "colors": "white"
       }
+    },
+    "collage_cQx9KL": {
+      "type": "collage",
+      "blocks": {
+        "image_HYaV36": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Shop-CAT-1080-x-1080-2024---Q3---Media-Grid-Footwear-min_bb1419d5-653d-4ada-a59e-457c5198a992.webp",
+            "desktop_position": "md-min-align-bottom md-min-justify-left",
+            "mobile_position": "md-max-align-bottom md-max-justify-right",
+            "heading": "Schuhwerk",
+            "heading_size": 30,
+            "url": "",
+            "button_label": "Jetzt kaufen",
+            "buttons_style": "filled",
+            "override_button_colors": true,
+            "button_background_color": "#ffffff",
+            "button_color": "#000000",
+            "text_color": "#FFFFFF",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_78ytmV": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Shop-CAT-1080-x-1080-2024---Q3---Media-Grid-Jackets-min_5a127234-64a6-4e60-bfc7-4fc5d6d197b6.jpg",
+            "desktop_position": "md-min-align-bottom md-min-justify-left",
+            "mobile_position": "md-max-align-bottom md-max-justify-left",
+            "heading": "Klamotten",
+            "heading_size": 30,
+            "url": "",
+            "button_label": "Jetzt kaufen",
+            "buttons_style": "filled",
+            "override_button_colors": true,
+            "button_background_color": "#ffffff",
+            "button_color": "#000000",
+            "text_color": "#FFFFFF",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_ANqxt3": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Shop-CAT-1080-x-1080-2024---Q3---Media-Grid-T-Shirts-min_f864fd71-0572-4b35-8e4c-3859e0826527.webp",
+            "desktop_position": "md-min-align-bottom md-min-justify-left",
+            "mobile_position": "md-max-align-bottom md-max-justify-left",
+            "heading": "Lifestyle",
+            "heading_size": 30,
+            "url": "",
+            "button_label": "Jetzt kaufen",
+            "buttons_style": "filled",
+            "override_button_colors": true,
+            "button_background_color": "#ffffff",
+            "button_color": "#000000",
+            "text_color": "#FFFFFF",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_GzGqzi": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Shop-CAT-1200-x-628-2024---Q3---Media-Grid-Trousers-min_ae24dfc5-a03e-4811-9b49-88c1225ab515.webp",
+            "desktop_position": "md-min-align-bottom md-min-justify-left",
+            "mobile_position": "md-max-align-bottom md-max-justify-left",
+            "heading": "Workwear",
+            "heading_size": 30,
+            "url": "",
+            "button_label": "Jetzt kaufen",
+            "buttons_style": "filled",
+            "override_button_colors": true,
+            "button_background_color": "#ffffff",
+            "button_color": "#000000",
+            "text_color": "#FFFFFF",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_hhD8Ye": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Design_ohne_Titel_28.jpg",
+            "desktop_position": "md-min-align-bottom md-min-justify-left",
+            "mobile_position": "md-max-align-bottom md-max-justify-left",
+            "heading": "Spielzeug",
+            "heading_size": 30,
+            "url": "",
+            "button_label": "Jetzt kaufen",
+            "buttons_style": "filled",
+            "override_button_colors": true,
+            "button_background_color": "#ffffff",
+            "button_color": "#000000",
+            "text_color": "#FFFFFF",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "image_HYaV36",
+        "image_78ytmV",
+        "image_ANqxt3",
+        "image_GzGqzi",
+        "image_hhD8Ye"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "section_width": "content",
+        "remove_spacing": false,
+        "block_alignment": "center",
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "width_1": "3",
+        "height_1": "3",
+        "width_2": "3",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "color_scheme": "white"
+      }
     }
   },
   "order": [
     "slideshow_RRiMqQ",
-    "3643d38b-24f2-4040-ab67-4b4b44a63aab"
+    "3643d38b-24f2-4040-ab67-4b4b44a63aab",
+    "collage_cQx9KL"
   ]
 }
