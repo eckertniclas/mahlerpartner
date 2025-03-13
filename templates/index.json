@@ -53,7 +53,6 @@
     "3643d38b-24f2-4040-ab67-4b4b44a63aab": {
       "type": "featured-collection",
       "custom_css": [
-        ".quick-add-wrapper {display: none;}",
         ".section-title--wrapper {align-items: flex-start;}"
       ],
       "settings": {
