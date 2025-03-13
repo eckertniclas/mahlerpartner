@@ -42,7 +42,7 @@
         "announcement_d4QgAz"
       ],
       "custom_css": [
-        ".announcement-item p {margin:0px;}"
+        ".announcement-item p {margin: 0px;}"
       ],
       "settings": {
         "background_color": "#000000",
@@ -146,7 +146,7 @@
         "logo": "shopify://shop_images/Bildschirmfoto_2025-03-13_um_00.02.19.png",
         "logo-placement": "center",
         "logo_max_width": 205,
-        "logo_max_width_mobile": 100,
+        "logo_max_width_mobile": 150,
         "logo_padding": 30,
         "main_linklist": "main-menu",
         "dropdown_alignment": "left",
@@ -157,7 +157,7 @@
         "enable_search": true,
         "cart-style": "shopping-cart",
         "cart_count": true,
-        "show_offers_drawer": true,
+        "show_offers_drawer": false,
         "offers_drawer_icon": "fire",
         "offers_drawer_icon_color": "#f2bd35",
         "offers_drawer_show_tooltip": true,
