@@ -23,8 +23,8 @@
             "second_button_label": "",
             "buttons_style": "filled",
             "override_button_colors": false,
-            "button-background": "#E68819",
-            "button-text": "#FFFFFF",
+            "button-background": "#e68819",
+            "button-text": "#ffffff",
             "image": "shopify://shop_images/Design_ohne_Titel_28.jpg",
             "text_position": "center_left",
             "desktop-caption-heading-size": 60,
@@ -53,11 +53,11 @@
     "3643d38b-24f2-4040-ab67-4b4b44a63aab": {
       "type": "featured-collection",
       "settings": {
-        "title": "Neusten Produkte",
+        "title": "Die neusten Produkte",
         "description": "",
-        "collection": "frontpage",
+        "collection": "neuste-produkte",
         "override_button_colors": false,
-        "button_background_color": "#E68819",
+        "button_background_color": "#e68819",
         "button_text_color": "#ffffff",
         "show_view_all": false,
         "buttons_style": "filled",
@@ -80,7 +80,7 @@
             "subheading": "Subheading",
             "overlay-btn-text": "",
             "show-gradient-overlay": false,
-            "overlay_font_color": "#FFFFFF",
+            "overlay_font_color": "#ffffff",
             "overlay_color": "#242424"
           }
         },
@@ -91,7 +91,7 @@
             "subheading": "Subheading",
             "overlay-btn-text": "",
             "show-gradient-overlay": false,
-            "overlay_font_color": "#FFFFFF",
+            "overlay_font_color": "#ffffff",
             "overlay_color": "#242424"
           }
         }
@@ -107,7 +107,7 @@
         "content-position": "below-image",
         "buttons_style": "filled",
         "override_button_colors": false,
-        "button_background_color": "#E68819",
+        "button_background_color": "#e68819",
         "button_text_color": "#ffffff",
         "section-width": "full",
         "section_padding_top": 60,
@@ -146,8 +146,8 @@
             "second_button_label": "",
             "buttons_style": "filled",
             "override_button_colors": false,
-            "buttons_background": "#E68819",
-            "buttons_text": "#FFFFFF",
+            "buttons_background": "#e68819",
+            "buttons_text": "#ffffff",
             "buttons_bottom_spacing": 20
           }
         }
@@ -169,7 +169,7 @@
         "animation_style": "sticky_content",
         "section_margin_top": 0,
         "section_margin_bottom": 0,
-        "text_color": "#FFFFFF",
+        "text_color": "#ffffff",
         "caption_bg_color": "rgba(0,0,0,0)",
         "image_overlay_color": "#242424",
         "image_overlay_opacity": 0
@@ -189,9 +189,9 @@
             "button_label": "",
             "buttons_style": "filled",
             "override_button_colors": false,
-            "button_background_color": "#E68819",
-            "button_color": "#FFFFFF",
-            "text_color": "#FFFFFF",
+            "button_background_color": "#e68819",
+            "button_color": "#ffffff",
+            "text_color": "#ffffff",
             "overlay_color": "rgba(0,0,0,0)"
           }
         },
@@ -206,9 +206,9 @@
             "button_label": "",
             "buttons_style": "filled",
             "override_button_colors": false,
-            "button_background_color": "#E68819",
-            "button_color": "#FFFFFF",
-            "text_color": "#FFFFFF",
+            "button_background_color": "#e68819",
+            "button_color": "#ffffff",
+            "text_color": "#ffffff",
             "overlay_color": "rgba(0,0,0,0)"
           }
         }
@@ -247,7 +247,7 @@
         "description": "",
         "collection": "",
         "override_button_colors": false,
-        "button_background_color": "#E68819",
+        "button_background_color": "#e68819",
         "button_text_color": "#ffffff",
         "show_view_all": false,
         "buttons_style": "filled",
@@ -290,8 +290,8 @@
             "second_button_label": "",
             "buttons_style": "filled",
             "override_button_colors": false,
-            "buttons_background": "#E68819",
-            "buttons_text": "#FFFFFF",
+            "buttons_background": "#e68819",
+            "buttons_text": "#ffffff",
             "buttons_bottom_spacing": 20
           }
         }
@@ -313,7 +313,7 @@
         "animation_style": "none",
         "section_margin_top": 0,
         "section_margin_bottom": 0,
-        "text_color": "#FFFFFF",
+        "text_color": "#ffffff",
         "caption_bg_color": "rgba(0,0,0,0)",
         "image_overlay_color": "#242424",
         "image_overlay_opacity": 0
@@ -366,9 +366,9 @@
             "button_label": "",
             "buttons_style": "filled",
             "override_button_colors": false,
-            "button_background_color": "#E68819",
-            "button_color": "#FFFFFF",
-            "text_color": "#FFFFFF",
+            "button_background_color": "#e68819",
+            "button_color": "#ffffff",
+            "text_color": "#ffffff",
             "overlay_color": "rgba(0,0,0,0)"
           }
         },
@@ -383,9 +383,9 @@
             "button_label": "Shop now",
             "buttons_style": "filled",
             "override_button_colors": false,
-            "button_background_color": "#E68819",
-            "button_color": "#FFFFFF",
-            "text_color": "#FFFFFF",
+            "button_background_color": "#e68819",
+            "button_color": "#ffffff",
+            "text_color": "#ffffff",
             "overlay_color": "rgba(0,0,0,0)"
           }
         },
@@ -400,9 +400,9 @@
             "button_label": "Shop now",
             "buttons_style": "filled",
             "override_button_colors": false,
-            "button_background_color": "#E68819",
-            "button_color": "#FFFFFF",
-            "text_color": "#FFFFFF",
+            "button_background_color": "#e68819",
+            "button_color": "#ffffff",
+            "text_color": "#ffffff",
             "overlay_color": "rgba(0,0,0,0)"
           }
         }
@@ -443,7 +443,7 @@
           "settings": {
             "menu_item_text": "Menu item",
             "menu_item_link": "",
-            "menu_item_color": "#FFFFFF"
+            "menu_item_color": "#ffffff"
           }
         },
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-2": {
@@ -451,7 +451,7 @@
           "settings": {
             "menu_item_text": "Menu item",
             "menu_item_link": "",
-            "menu_item_color": "#FFFFFF"
+            "menu_item_color": "#ffffff"
           }
         },
         "template--14831909208134__12a25ae5-a869-4fec-9751-deb411052883-menu_item-3": {
@@ -459,7 +459,7 @@
           "settings": {
             "menu_item_text": "Menu item",
             "menu_item_link": "",
-            "menu_item_color": "#FFFFFF"
+            "menu_item_color": "#ffffff"
           }
         }
       },
