@@ -50,6 +50,26 @@
         "section_padding_bottom": 0
       }
     },
+    "3643d38b-24f2-4040-ab67-4b4b44a63aab": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Neusten Produkte",
+        "description": "",
+        "collection": "frontpage",
+        "override_button_colors": false,
+        "button_background_color": "#E68819",
+        "button_text_color": "#ffffff",
+        "show_view_all": false,
+        "buttons_style": "filled",
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "layout_style": "slider",
+        "products_to_show": 8,
+        "grid-desktop": 4,
+        "grid-mobile": "2",
+        "colors": "white"
+      }
+    },
     "06b36118-35e6-4312-b5b2-099a0ddc5aa6": {
       "type": "collection-list",
       "blocks": {
@@ -93,26 +113,6 @@
         "section_padding_top": 60,
         "section_padding_bottom": 0,
         "remove-spacing": false,
-        "colors": "white"
-      }
-    },
-    "3643d38b-24f2-4040-ab67-4b4b44a63aab": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "description": "",
-        "collection": "",
-        "override_button_colors": false,
-        "button_background_color": "#E68819",
-        "button_text_color": "#ffffff",
-        "show_view_all": false,
-        "buttons_style": "filled",
-        "section_padding_top": 60,
-        "section_padding_bottom": 60,
-        "layout_style": "slider",
-        "products_to_show": 8,
-        "grid-desktop": 4,
-        "grid-mobile": "2",
         "colors": "white"
       }
     },
@@ -507,8 +507,8 @@
   },
   "order": [
     "slideshow_RRiMqQ",
-    "06b36118-35e6-4312-b5b2-099a0ddc5aa6",
     "3643d38b-24f2-4040-ab67-4b4b44a63aab",
+    "06b36118-35e6-4312-b5b2-099a0ddc5aa6",
     "35b28867-77fd-4573-8212-101b3b8e2245",
     "50b03afc-6c7a-4252-94c2-7579c9d3b3ee",
     "3c4d9433-fe83-4e4a-afa6-63c348fea245",
