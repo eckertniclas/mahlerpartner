@@ -17,19 +17,19 @@
         "announcement_xtcrgx": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Kostenlose Lieferung ab 70€</p>"
+            "text": "<p>Kostenlose Lieferung ab 100€</p>"
           }
         },
         "announcement_Rpz388": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Über 300.000 zufriedene Kunden</p>"
+            "text": "<p>Exklusivimporteur für Diecast Masters</p>"
           }
         },
         "announcement_d4QgAz": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Nr.1  Hersteller in Deutschland</p>"
+            "text": "<p>USK - Eigene Produktion</p>"
           }
         }
       },
