@@ -15,7 +15,7 @@
         "image_F7RqmF": {
           "type": "image",
           "settings": {
-            "title": "Dein Shop für Baumaschinen, Trucks & Landwirtschaftsmodelle",
+            "title": "Dein Shop für Baumaschinen, Landwirtschaftsmodelle & Trucks",
             "text": "Entdecke jetzt unser Sortiment nach Vorbildern von Caterpillar, Fendt, Peterbilt und vielen mehr!",
             "first_button_link": "shopify://collections/all",
             "first_button_label": "Jetzt entdecken",
@@ -27,7 +27,7 @@
             "button-text": "#ffffff",
             "image": "shopify://shop_images/cat_336.jpg.imagethumb.1920.jpg",
             "text_position": "center_left",
-            "desktop-caption-heading-size": 60,
+            "desktop-caption-heading-size": 50,
             "desktop-caption-body-text-size": 16,
             "mobile_text_position": "center",
             "mobile-caption-heading-size": 36,
@@ -151,12 +151,12 @@
         "image_hhD8Ye": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/Design_ohne_Titel_28.jpg",
+            "desktop_image": "shopify://shop_images/89995-Detail-1.jpg",
             "desktop_position": "md-min-align-bottom md-min-justify-left",
             "mobile_position": "md-max-align-bottom md-max-justify-left",
-            "heading": "Spielzeug",
+            "heading": "Straßenbau",
             "heading_size": 30,
-            "url": "",
+            "url": "shopify://collections/strassenbau",
             "button_label": "Jetzt kaufen",
             "buttons_style": "filled",
             "override_button_colors": true,
