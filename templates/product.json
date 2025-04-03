@@ -33,8 +33,8 @@
           "type": "price",
           "settings": {
             "price_font": "h3",
-            "shipping_policy": false,
-            "tax_included": false,
+            "shipping_policy": true,
+            "tax_included": true,
             "margin_bottom": 30
           }
         },
