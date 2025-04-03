@@ -133,12 +133,12 @@
         "image_GzGqzi": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/Shop-CAT-1200-x-628-2024---Q3---Media-Grid-Trousers-min_ae24dfc5-a03e-4811-9b49-88c1225ab515.webp",
+            "desktop_image": "shopify://shop_images/85770-Detail-6.jpg",
             "desktop_position": "md-min-align-bottom md-min-justify-left",
             "mobile_position": "md-max-align-bottom md-max-justify-left",
-            "heading": "Workwear",
+            "heading": "Radlader",
             "heading_size": 30,
-            "url": "",
+            "url": "shopify://collections/radlader",
             "button_label": "Jetzt kaufen",
             "buttons_style": "filled",
             "override_button_colors": true,
