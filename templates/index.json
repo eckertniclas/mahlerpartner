@@ -97,12 +97,12 @@
         "image_78ytmV": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/Shop-CAT-1080-x-1080-2024---Q3---Media-Grid-Jackets-min_5a127234-64a6-4e60-bfc7-4fc5d6d197b6.jpg",
+            "desktop_image": "shopify://shop_images/10653.jpg",
             "desktop_position": "md-min-align-bottom md-min-justify-left",
             "mobile_position": "md-max-align-bottom md-max-justify-left",
-            "heading": "Klamotten",
+            "heading": "Trecker",
             "heading_size": 30,
-            "url": "",
+            "url": "shopify://collections/traktoren",
             "button_label": "Jetzt kaufen",
             "buttons_style": "filled",
             "override_button_colors": true,
@@ -115,12 +115,12 @@
         "image_ANqxt3": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/Shop-CAT-1080-x-1080-2024---Q3---Media-Grid-T-Shirts-min_f864fd71-0572-4b35-8e4c-3859e0826527.webp",
+            "desktop_image": "shopify://shop_images/85651.jpg",
             "desktop_position": "md-min-align-bottom md-min-justify-left",
             "mobile_position": "md-max-align-bottom md-max-justify-left",
-            "heading": "Lifestyle",
+            "heading": "Bergbau",
             "heading_size": 30,
-            "url": "",
+            "url": "shopify://collections/bergbau",
             "button_label": "Jetzt kaufen",
             "buttons_style": "filled",
             "override_button_colors": true,
