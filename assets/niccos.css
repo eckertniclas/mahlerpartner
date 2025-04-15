@@ -1,0 +1,9 @@
+.product-details-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-details-wrapper img {
+  height: 70px;
+}
