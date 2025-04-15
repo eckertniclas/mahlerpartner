@@ -22,6 +22,12 @@
             "margin_bottom": 5
           }
         },
+        "vendor_VL9Pk3": {
+          "type": "vendor",
+          "settings": {
+            "margin_bottom": 30
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -129,6 +135,7 @@
       },
       "block_order": [
         "star_rating_Xzpi9G",
+        "vendor_VL9Pk3",
         "title",
         "price",
         "f0f0e917-92a5-4957-a68e-2d0bb38d7819",
