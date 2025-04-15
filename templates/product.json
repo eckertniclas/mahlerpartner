@@ -32,8 +32,8 @@
         "custom_liquid_9deQgn": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{%- assign current_variant = product.selected_or_first_available_variant -%}\n                        <p>{{ current_variant.sku }}</p>",
-            "margin_bottom": 30
+            "custom_liquid": "{%- assign current_variant = product.selected_or_first_available_variant -%}\n<p>SKU: {{ current_variant.sku }}</p>",
+            "margin_bottom": 0
           }
         },
         "price": {
