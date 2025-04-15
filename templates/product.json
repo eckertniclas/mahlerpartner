@@ -76,7 +76,7 @@
             "stock-level-indicator-style": "classic",
             "bar-indicator-color": "standard",
             "stock_indicator_animation": true,
-            "margin_bottom": 8
+            "margin_bottom": 15
           }
         },
         "buy_buttons": {
