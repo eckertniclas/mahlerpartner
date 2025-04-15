@@ -45,22 +45,6 @@
             "margin_bottom": 30
           }
         },
-        "2f3ddc8d-6514-403d-a884-88c9a0294300": {
-          "type": "stock-level-indicator",
-          "settings": {
-            "stock-range": 20,
-            "stock-level-notice": "always",
-            "show-stock-count": false,
-            "in-stock-message": "Ready to ship",
-            "low-stock-message": "Selling fast!",
-            "out-of-stock-message": "Back in stock soon",
-            "preorder-message": "Preorder today",
-            "stock-level-indicator-style": "classic",
-            "bar-indicator-color": "standard",
-            "stock_indicator_animation": true,
-            "margin_bottom": 8
-          }
-        },
         "options": {
           "type": "options",
           "settings": {
@@ -77,6 +61,22 @@
           "type": "quantity",
           "settings": {
             "margin_bottom": 30
+          }
+        },
+        "2f3ddc8d-6514-403d-a884-88c9a0294300": {
+          "type": "stock-level-indicator",
+          "settings": {
+            "stock-range": 20,
+            "stock-level-notice": "always",
+            "show-stock-count": true,
+            "in-stock-message": "Ready to ship",
+            "low-stock-message": "Selling fast!",
+            "out-of-stock-message": "Back in stock soon",
+            "preorder-message": "Preorder today",
+            "stock-level-indicator-style": "classic",
+            "bar-indicator-color": "standard",
+            "stock_indicator_animation": true,
+            "margin_bottom": 8
           }
         },
         "buy_buttons": {
@@ -107,9 +107,9 @@
         "title",
         "custom_liquid_9deQgn",
         "price",
-        "2f3ddc8d-6514-403d-a884-88c9a0294300",
         "options",
         "quantity",
+        "2f3ddc8d-6514-403d-a884-88c9a0294300",
         "buy_buttons",
         "a55b9011-1b1a-4353-9d97-7bdcd60949f2"
       ],
