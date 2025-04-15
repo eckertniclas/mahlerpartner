@@ -29,6 +29,13 @@
             "margin_bottom": 0
           }
         },
+        "custom_liquid_9deQgn": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign current_variant = product.selected_or_first_available_variant -%}\n                        <p>{{ current_variant.sku }}</p>",
+            "margin_bottom": 30
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -36,12 +43,6 @@
             "shipping_policy": true,
             "tax_included": true,
             "margin_bottom": 30
-          }
-        },
-        "f0f0e917-92a5-4957-a68e-2d0bb38d7819": {
-          "type": "separator",
-          "settings": {
-            "margin_bottom": 15
           }
         },
         "2f3ddc8d-6514-403d-a884-88c9a0294300": {
@@ -58,32 +59,6 @@
             "bar-indicator-color": "standard",
             "stock_indicator_animation": true,
             "margin_bottom": 8
-          }
-        },
-        "a7717974-ed85-4cde-80ef-4751178acf57": {
-          "type": "text-with-icon",
-          "settings": {
-            "icon": "truck",
-            "text": "Worldwide shipping available",
-            "link": "",
-            "margin_bottom": 8,
-            "text_color": "#242424"
-          }
-        },
-        "text_with_icon_dtPE3H": {
-          "type": "text-with-icon",
-          "settings": {
-            "icon": "price-tag",
-            "text": "Exclusive offers available",
-            "link": "",
-            "margin_bottom": 17,
-            "text_color": "#242424"
-          }
-        },
-        "separator_j9tcaD": {
-          "type": "separator",
-          "settings": {
-            "margin_bottom": 30
           }
         },
         "options": {
@@ -130,12 +105,9 @@
       "block_order": [
         "star_rating_Xzpi9G",
         "title",
+        "custom_liquid_9deQgn",
         "price",
-        "f0f0e917-92a5-4957-a68e-2d0bb38d7819",
         "2f3ddc8d-6514-403d-a884-88c9a0294300",
-        "a7717974-ed85-4cde-80ef-4751178acf57",
-        "text_with_icon_dtPE3H",
-        "separator_j9tcaD",
         "options",
         "quantity",
         "buy_buttons",
