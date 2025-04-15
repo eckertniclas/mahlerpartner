@@ -8,7 +8,7 @@
 
 {{ 'component-product-media-grid.min.css' | asset_url | stylesheet_tag }}
 
-{% liquid 
+{% liquid
   assign is_odd = true
   assign even_or_odd = product.media.size | modulo: 2
   if even_or_odd == 0
@@ -36,28 +36,37 @@
   endcomment
   assign preorder_string = 'products.product.preorder' | t | downcase
   assign preorder_product = false
+  assign custom_badge = blank
 
   for tag in product.tags
     assign lowercase_tag = tag | downcase
+
     if lowercase_tag contains preorder_string
       assign preorder_product = true
     endif
-    assign lowercase_tag = tag | downcase
-    if lowercase_tag contains preorder_string
-      assign preorder_product = true
-    endif
-    if preorder_product == false and tag contains '_badge:'
-      assign custom_badge = tag | remove: '_badge:'
+
+    if tag contains 'custom_'
+      assign custom_badge = tag | remove: 'custom_' | replace: '_', ' ' | capitalize
     endif
   endfor
 %}
 
 <safe-load-scripts class="hidden">
-  <script src="{{ 'component-deferred-media.js' | asset_url }}" defer="defer" type="module" data-flow-load-key="deferred-media"></script>
+  <script
+    src="{{ 'component-deferred-media.js' | asset_url }}"
+    defer="defer"
+    type="module"
+    data-flow-load-key="deferred-media"
+  ></script>
 </safe-load-scripts>
 
 <safe-load-scripts class="hidden">
-  <script src="{{ 'component-product-media-grid.js' | asset_url }}" defer="defer" type="module" data-flow-load-key="product-media"></script>
+  <script
+    src="{{ 'component-product-media-grid.js' | asset_url }}"
+    defer="defer"
+    type="module"
+    data-flow-load-key="product-media"
+  ></script>
 </safe-load-scripts>
 
 {% if settings.show_badges %}
@@ -81,20 +90,27 @@
 {% endif %}
 
 {% if product.media.size > 0 %}
-  <product-media-grid id="{{ section.id }}" class="product-media--grid-wrapper small--hide medium--hide" data-media-type="{{ type }}">
+  <product-media-grid
+    id="{{ section.id }}"
+    class="product-media--grid-wrapper small--hide medium--hide"
+    data-media-type="{{ type }}"
+  >
     {% comment %} ==== BADGES ==== {% endcomment %}
     <div data-product-badge>
       {{ product_badge }}
     </div>
 
     {% comment %} ==== IMAGES ==== {% endcomment %}
-    <div data-media-main class="{% if product.media.size == 1 %} media--single{% endif %}{% if custom_aspect_ratio %} custom-aspect-ratio{% endif %}">
+    <div
+      data-media-main
+      class="{% if product.media.size == 1 %} media--single{% endif %}{% if custom_aspect_ratio %} custom-aspect-ratio{% endif %}"
+    >
       {% if product.media.size > 1 %}
         {% comment %} ==== ODD IMAGES ==== {% endcomment %}
         <div class="media-column--odd">
           {% for media in product.media %}
             {% unless media == last_media and custom_aspect_ratio %}
-              {% liquid 
+              {% liquid
                 assign index_is_odd = true
                 assign index_even_or_odd = forloop.index | modulo: 2
                 if index_even_or_odd == 0
@@ -110,9 +126,10 @@
                     data-pswp-width="{{ media.width }}"
                     data-pswp-height="{{ media.height }}"
                     target="_blank"
-                    {% if adapt_ratio %}style="padding-bottom: {{ adapt_ratio }}%;"{% endif %}
+                    {% if adapt_ratio %}
+                      style="padding-bottom: {{ adapt_ratio }}%;"
+                    {% endif %}
                   >
-
                     <img
                       class="theme-img media-ratio--{{ section.settings.image_shape }}"
                       src="{{ media.preview_image | image_url: width: 1445 }}"
@@ -121,8 +138,7 @@
                       height="{{ media.height }}"
                       sizes="calc(100vw / 4)"
                       loading="eager"
-                    />
-                  
+                    >
                   </a>
                 {% else %}
                   {% render 'deferred-media' with delayed_media: media, section_id: section.id, enable_video_loop: enable_video_loop, media_wrapper_classes: 'product-single__media__wrapper', aspect_ratio: section.settings.image_shape, enable_autoplay: enable_autoplay, media_product: product, media_type: 'grid', show_controls: show_video_controls %}
@@ -135,7 +151,7 @@
         {% comment %} ==== EVEN IMAGES ==== {% endcomment %}
         <div class="media-column--even">
           {% for media in product.media %}
-            {% liquid 
+            {% liquid
               assign index_is_odd = true
               assign index_even_or_odd = forloop.index | modulo: 2
               if index_even_or_odd == 0
@@ -151,9 +167,10 @@
                   data-pswp-width="{{ media.width }}"
                   data-pswp-height="{{ media.height }}"
                   target="_blank"
-                  {% if adapt_ratio %}style="padding-bottom: {{ adapt_ratio }}%;"{% endif %}
+                  {% if adapt_ratio %}
+                    style="padding-bottom: {{ adapt_ratio }}%;"
+                  {% endif %}
                 >
-
                   <img
                     class="theme-img media-ratio--{{ section.settings.image_shape }}"
                     src="{{ media.preview_image | image_url: width: 1445 }}"
@@ -162,8 +179,7 @@
                     height="{{ media.height }}"
                     sizes="calc(100vw / 4)"
                     loading="eager"
-                  />
-                
+                  >
                 </a>
               {% else %}
                 {% render 'deferred-media' with delayed_media: media, section_id: section.id, enable_video_loop: enable_video_loop, media_wrapper_classes: 'product-single__media__wrapper', aspect_ratio: section.settings.image_shape, enable_autoplay: enable_autoplay, media_product: product, media_type: 'grid', show_controls: show_video_controls %}
@@ -185,10 +201,13 @@
                   data-pswp-width="{{ media.width }}"
                   data-pswp-height="{{ media.height }}"
                   target="_blank"
-                  {% if adapt_ratio %}style="padding-bottom: {{ adapt_ratio }}%;"{% endif %}
-                  {% if product.media.size == 1 and settings.animations_enabled %}class="kb-enabled"{% endif %}
+                  {% if adapt_ratio %}
+                    style="padding-bottom: {{ adapt_ratio }}%;"
+                  {% endif %}
+                  {% if product.media.size == 1 and settings.animations_enabled %}
+                    class="kb-enabled"
+                  {% endif %}
                 >
-    
                   <img
                     class="theme-img media-ratio--{{ section.settings.image_shape }}"
                     src="{{ media.preview_image | image_url: width: 1445 }}"
@@ -197,8 +216,7 @@
                     height="{{ media.height }}"
                     sizes="calc(100vw / 4)"
                     loading="eager"
-                  />
-                
+                  >
                 </a>
               {% else %}
                 {% render 'deferred-media' with delayed_media: media, section_id: section.id, enable_video_loop: enable_video_loop, media_wrapper_classes: 'product-single__media__wrapper', aspect_ratio: section.settings.image_shape, enable_autoplay: enable_autoplay, media_product: product, media_type: 'grid', show_controls: show_video_controls %}
@@ -214,9 +232,14 @@
     <div data-product-badge>
       {{ product_badge }}
     </div>
-    
+
     {% if onboarding %}
-      <div data-media-main {% if custom_aspect_ratio %}class="custom-aspect-ratio"{% endif %}>
+      <div
+        data-media-main
+        {% if custom_aspect_ratio %}
+          class="custom-aspect-ratio"
+        {% endif %}
+      >
         {% assign svg_classes = 'icon icon--placeholder media-ratio--' | append: section.settings.image_shape %}
         {% for i in (1..3) %}
           <div class="media-column--odd{% if i == 3 %}-full{% endif %}">
