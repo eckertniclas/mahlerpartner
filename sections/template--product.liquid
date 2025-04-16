@@ -220,56 +220,23 @@
                       style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
                       {{ block.shopify_attributes }}
                     >
-                      <!-- Debug outputs -->
-                      <p><strong>Debug vendor_name:</strong> {{ product.vendor | strip }}</p>
-
                       {% assign vendor_name = product.vendor | strip %}
-                      {% assign all_partners = shop.metaobjects.partnerlogos %}
+{% assign all_partners = shop.metaobjects.partnerlogos %}
 
-                      <!-- Debug outputs -->
-                      <p><strong>Debug all_partners (JSON):</strong> {{ all_partners | json }}</p>
+<!-- Debug: Show vendor_name -->
+<p><strong>Vendor:</strong> {{ vendor_name }}</p>
 
-                      <div class="product-details-wrapper">
-                        <h1 class="product-details-product-title">
-                          {{ product.title | escape }}
-                        </h1>
-
-                        {% if all_partners %}
-                          {% assign matched_partner = all_partners
-                            | where: 'fields.partner.value', vendor_name
-                            | first
-                          %}
-
-                          <!-- Debug outputs -->
-                          <p><strong>Debug matched_partner (JSON):</strong> {{ matched_partner | json }}</p>
-                          {% if matched_partner %}
-                            <p>
-                              <strong>Debug matched_partner.fields.partner.value:</strong>
-                              {{ matched_partner.fields.partner.value }}
-                            </p>
-                            <p>
-                              <strong>Debug matched_partner.fields.logo.value:</strong>
-                              {{ matched_partner.fields.logo.value }}
-                            </p>
-                          {% else %}
-                            <p><strong>Debug:</strong> No matched partner found.</p>
-                          {% endif %}
-
-                          {% if matched_partner and matched_partner.fields.logo.value %}
-                            <img
-                              class="vendor-logo"
-                              src="{{ matched_partner.fields.logo.value | image_url: 'x300' }}"
-                              alt="{{ vendor_name }}"
-                            >
-                          {% else %}
-                            <p><strong>Debug:</strong> Either matched_partner is missing or no logo field.</p>
-                          {% endif %}
-                        {% else %}
-                          <p>
-                            <strong>Debug:</strong> No metaobjects found in <code>shop.metaobjects.partnerlogos</code>.
-                          </p>
-                        {% endif %}
-                      </div>
+{% if all_partners %}
+  <p><strong>All Partners:</strong></p>
+  {% for partner_object in all_partners %}
+    <p>partner_object.title = {{ partner_object.title }}</p>
+    <p>partner_object.fields.partner.value = {{ partner_object.fields.partner.value }}</p>
+    <p>partner_object.fields.logo.value = {{ partner_object.fields.logo.value }}</p>
+    <hr />
+  {% endfor %}
+{% else %}
+  <p><strong>Debug:</strong> No metaobjects found in shop.metaobjects.partnerlogos</p>
+{% endif %}
                     </div>
 
                   {% when 'separator' %}
