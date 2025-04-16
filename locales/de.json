@@ -522,7 +522,7 @@
       "type": "Typ",
       "include_taxes": "Inkl. MwSt.",
       "shipping_policy_html": "zzgl. <a href=\"{{ link }}\">Versandkosten</a>",
-      "shipping_policy_html_free": "inkl. <a href=\"{{ link }}\">Versandkosten</a>",
+      "shipping_policy_free_html": "inkl. <a href=\"{{ link }}\">Versandkosten</a>",
       "quote": "Zitat",
       "preorder_today": "Jetzt vorbestellen",
       "in_stock": "Auf Lager",
