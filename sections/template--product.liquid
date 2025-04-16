@@ -769,7 +769,9 @@
 
                   {% when 'buy_buttons' %}
                     {% comment %} ===== PAYMENT BUTTONS BLOCK ===== {% endcomment %}
+                    {% if product.price > 0 %}
                     {% render 'payment-buttons' with product: product, block: block, product_form_id: product_form_id, section_id: section.id, show_buy_now: block.settings.show_smart_checkout, gift_card_form_enabled: block.settings.enable_gift_card_recipient_form %}
+                    {% endif %}
 
                   {% when 'local_pickup' %}
                     {% comment %} ===== LOCAL PICKUP BLOCK ===== {% endcomment %}
