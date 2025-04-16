@@ -521,7 +521,7 @@
       "category": "Kategorie",
       "type": "Typ",
       "include_taxes": "Inkl. MwSt.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Versand</a> wird beim Checkout berechnet.",
+      "shipping_policy_html": "zzgl. <a href=\"{{ link }}\">Versandkosten</a>",
       "quote": "Zitat",
       "preorder_today": "Jetzt vorbestellen",
       "in_stock": "Auf Lager",
