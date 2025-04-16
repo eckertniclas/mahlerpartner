@@ -137,6 +137,9 @@
           {% render 'badge' with badge: 'sale', badge_product: product, use_variant: true %}
         {% endif %}
       {% else %}
+        {% if custom_badge %}
+          {% render 'badge' with badge: 'custom', custom_badge: custom_badge %}
+        {% endif %}
         {% render 'badge' with badge: 'sold-out', badge_product: product %}
       {% endif %}
     {% else %}
