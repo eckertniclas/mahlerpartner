@@ -226,7 +226,7 @@
                         </h1>
                         {% assign image = product.metafields.custom.partnerlogos.value.logo.value %}
                         {% if image %}
-                          {{ image | image_url: width: image.width | image_tag: class: "vendor-logo" }}
+                          {{ image | image_url: width: image.width | image_tag: class: 'vendor-logo' }}
                         {% endif %}
                       </div>
                     </div>
@@ -278,7 +278,11 @@
                             {{ 'products.product.include_taxes' | t }}
                           {%- endif -%}
                           {%- if show_shipping_policy -%}
-                            {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                            {% if product.price >= 99.99 %}
+                              {{ 'products.product.shipping_policy_html_free' | t: link: shop.shipping_policy.url }}
+                            {% else %}
+                              {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                            {% endif %}
                           {%- endif -%}
                         </div>
                       {%- endif -%}
@@ -770,7 +774,7 @@
                   {% when 'buy_buttons' %}
                     {% comment %} ===== PAYMENT BUTTONS BLOCK - DISABLE FREE PRODUCTS ATC BUTTON ===== {% endcomment %}
                     {% if product.price > 0 %}
-                    {% render 'payment-buttons' with product: product, block: block, product_form_id: product_form_id, section_id: section.id, show_buy_now: block.settings.show_smart_checkout, gift_card_form_enabled: block.settings.enable_gift_card_recipient_form %}
+                      {% render 'payment-buttons' with product: product, block: block, product_form_id: product_form_id, section_id: section.id, show_buy_now: block.settings.show_smart_checkout, gift_card_form_enabled: block.settings.enable_gift_card_recipient_form %}
                     {% endif %}
 
                   {% when 'local_pickup' %}
