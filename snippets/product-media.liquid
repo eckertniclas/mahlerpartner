@@ -125,6 +125,11 @@
   <script src="{{ 'component-product-media.js' | asset_url }}" defer="defer" type="module" data-flow-load-key="product-media"></script>
 </safe-load-scripts>
 
+<script>
+  /* {{ custom_badge }} */
+  debugger;
+</script>
+
 {% if settings.show_badges %}
   {% capture product_badge %}
     {% if product != blank %}
