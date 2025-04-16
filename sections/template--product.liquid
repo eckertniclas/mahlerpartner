@@ -220,26 +220,12 @@
                       style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
                       {{ block.shopify_attributes }}
                     >
-{% assign vendor_name = product.vendor | strip %}
-
-<!-- Debug: Show vendor name -->
-<p><strong>Vendor:</strong> {{ vendor_name }}</p>
-
-{% for partner_item in shop.metaobjects.partnerlogos.values %}
-  <!-- Debug: Show what's in each metaobject -->
-  <p>Partner from metaobject: {{ partner_item.fields.partner.value }}</p>
-
-  {% if partner_item.fields.partner.value == vendor_name %}
-    <!-- Render only if there's a name match -->
-    <p>Match found! Rendering logo:</p>
-    <img
-      class="vendor-logo"
-      src="{{ partner_item.fields.logo.value | image_url: 'x300' }}"
-      alt="{{ vendor_name }}"
-    >
-  {% endif %}
-  <hr />
-{% endfor %}
+                      <div class="product-details-wrapper">
+                        <h1 class="{{ block.settings.title_font }} product-details-product-title">
+                          {{ product.title | escape }}
+                        </h1>
+                        <img class="vendor-logo" src="https://cdn.shopify.com/s/files/1/0902/5300/1087/files/Mahler_Partner-Logo-137.jpg?v=1743580137">
+                      </div>
                     </div>
 
                   {% when 'separator' %}
