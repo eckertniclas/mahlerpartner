@@ -224,8 +224,9 @@
                         <h1 class="{{ block.settings.title_font }} product-details-product-title">
                           {{ product.title | escape }}
                         </h1>
-                        {% if product.metafields.custom.partnerlogos.value.logo.value %}
-                          {{ product.metafields.custom.partnerlogos.value.logo.value | image_url | image_tag: class: "vendor-logo" }}
+                        {% assign image = product.metafields.custom.partnerlogos.value.logo.value %}
+                        {% if image %}
+                          {{ image | image_url: width: image.width | image_tag: class: "vendor-logo" }}
                         {% endif %}
                       </div>
                     </div>
