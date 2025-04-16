@@ -668,6 +668,11 @@
         "id": "giftwrap_label_text",
         "label": "t:settings_schema.Products.settings.giftwrap_label_text.label",
         "default": "Gift wrap this product"
+      },
+      {
+      "type": "number",
+      "id": "free_shipping_threshold",
+      "default": 100
       }
     ]
   },
