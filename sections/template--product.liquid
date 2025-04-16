@@ -1,5 +1,8 @@
 {{ 'template-product.min.css' | asset_url | stylesheet_tag: preload: true }}
 
+{%- assign threshold_in_cents = settings.free_shipping_threshold | times: 100 -%}
+{%- assign product_price_cents = product.selected_or_first_available_variant.price -%}
+
 {% liquid
   assign current_variant = product.selected_or_first_available_variant
 
@@ -279,7 +282,7 @@
                           {%- endif -%}
                           {%- if show_shipping_policy -%}
                             {% if product.price >= 99.99 %}
-                              {{ 'products.product.shipping_policy_free_html' | t: link: shop.shipping_policy.url }}
+                              {{ 'products.products.shipping_policy_free_html' | t: link: shop.shipping_policy.url }}
                             {% else %}
                               {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
                             {% endif %}
