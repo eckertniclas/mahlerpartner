@@ -104,11 +104,11 @@
         "collapsible_tab_dcAxQT": {
           "type": "collapsible-tab",
           "settings": {
-            "heading": "Collapsible tab",
+            "heading": "Größe & Gewicht",
             "open_close_icon": "plus_minus",
             "open_by_default": false,
-            "icon": "heart",
-            "text": "<p>Share some information about your product{{ product.metafields.custom.ma_e | metafield_tag }}</p>",
+            "icon": "none",
+            "text": "<p>{{ product.metafields.custom.ma_e | metafield_tag }}</p>",
             "page": "",
             "margin_bottom": 30
           }
