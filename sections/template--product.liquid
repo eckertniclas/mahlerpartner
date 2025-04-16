@@ -220,22 +220,22 @@
                       style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
                       {{ block.shopify_attributes }}
                     >
-                      {% assign vendor_name = product.vendor | strip %}
+{% assign vendor_name = product.vendor | strip %}
 {% assign all_partners = shop.metaobjects.partnerlogos %}
 
-<!-- Debug: Show vendor_name -->
 <p><strong>Vendor:</strong> {{ vendor_name }}</p>
 
 {% if all_partners %}
-  <p><strong>All Partners:</strong></p>
+  <p><strong>All Partners (Loop):</strong></p>
+
   {% for partner_object in all_partners %}
-    <p>partner_object.title = {{ partner_object.title }}</p>
-    <p>partner_object.fields.partner.value = {{ partner_object.fields.partner.value }}</p>
-    <p>partner_object.fields.logo.value = {{ partner_object.fields.logo.value }}</p>
+    <p>Title: {{ partner_object.title }}</p>
+    <p>Partner field: {{ partner_object.fields.partner.value }}</p>
+    <p>Logo field: {{ partner_object.fields.logo.value }}</p>
     <hr />
   {% endfor %}
 {% else %}
-  <p><strong>Debug:</strong> No metaobjects found in shop.metaobjects.partnerlogos</p>
+  <p>No metaobjects found in <code>shop.metaobjects.partnerlogos</code>.</p>
 {% endif %}
                     </div>
 
