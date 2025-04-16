@@ -221,22 +221,25 @@
                       {{ block.shopify_attributes }}
                     >
 {% assign vendor_name = product.vendor | strip %}
-{% assign all_partners = shop.metaobjects.partnerlogos %}
 
+<!-- Debug: Show vendor name -->
 <p><strong>Vendor:</strong> {{ vendor_name }}</p>
 
-{% if all_partners %}
-  <p><strong>All Partners (Loop):</strong></p>
+{% for partner_item in shop.metaobjects.partnerlogos.values %}
+  <!-- Debug: Show what's in each metaobject -->
+  <p>Partner from metaobject: {{ partner_item.fields.partner.value }}</p>
 
-  {% for partner_object in all_partners %}
-    <p>Title: {{ partner_object.title }}</p>
-    <p>Partner field: {{ partner_object.fields.partner.value }}</p>
-    <p>Logo field: {{ partner_object.fields.logo.value }}</p>
-    <hr />
-  {% endfor %}
-{% else %}
-  <p>No metaobjects found in <code>shop.metaobjects.partnerlogos</code>.</p>
-{% endif %}
+  {% if partner_item.fields.partner.value == vendor_name %}
+    <!-- Render only if there's a name match -->
+    <p>Match found! Rendering logo:</p>
+    <img
+      class="vendor-logo"
+      src="{{ partner_item.fields.logo.value | image_url: 'x300' }}"
+      alt="{{ vendor_name }}"
+    >
+  {% endif %}
+  <hr />
+{% endfor %}
                     </div>
 
                   {% when 'separator' %}
