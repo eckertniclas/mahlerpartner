@@ -520,7 +520,7 @@
       "tags": "Tags",
       "category": "Kategorie",
       "type": "Typ",
-      "include_taxes": "Inklusive Steuern.",
+      "include_taxes": "Inkl. MwSt zzgl. <a href=\"{{ link }}\">Versandkosten</a> ",
       "shipping_policy_html": "<a href=\"{{ link }}\">Versand</a> wird beim Checkout berechnet.",
       "quote": "Zitat",
       "preorder_today": "Jetzt vorbestellen",
