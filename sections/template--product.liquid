@@ -282,7 +282,7 @@
                           {%- endif -%}
                           {%- if show_shipping_policy -%}
                             {% if product_price_cents >= threshold_in_cents %}
-                              {{ 'products.product.shipping_policy_html_free' | t: link: shop.shipping_policy.url }}
+                              {{ 'products.product.shipping_policy_free_html' | t: link: shop.shipping_policy.url }}
                             {% else %}
                               {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
                             {% endif %}
