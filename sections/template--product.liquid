@@ -225,7 +225,7 @@
                           {{ product.title | escape }}
                         </h1>
                         {% if product.metafields.custom.partnerlogos.value.logo.value %}
-                          {{ product.metafields.custom.partnerlogos.value.logo.value | image_url | image_tag: "vendor-logo" }}
+                          {{ product.metafields.custom.partnerlogos.value.logo.value | image_url }}
                         {% endif %}
                       </div>
                     </div>
