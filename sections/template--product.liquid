@@ -220,11 +220,31 @@
                       style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
                       {{ block.shopify_attributes }}
                     >
+                      {% assign vendor_name = product.vendor | strip %}
+                      {% assign all_partners = shop.metaobjects.partnerlogos %}
+
                       <div class="product-details-wrapper">
-                        <h1 class="{{ block.settings.title_font }} product-details-product-title">
+                        <h1 class="product-details-product-title">
                           {{ product.title | escape }}
                         </h1>
-                        <img class="vendor-logo" src="https://cdn.shopify.com/s/files/1/0902/5300/1087/files/Mahler_Partner-Logo-137.jpg?v=1743580137">
+
+                        {% if all_partners %}
+                          {%- comment -%}
+                            We match on fields.partner.value == product.vendor
+                          {%- endcomment -%}
+                          {% assign matched_partner = all_partners
+                            | where: 'fields.partner.value', vendor_name
+                            | first
+                          %}
+
+                          {% if matched_partner and matched_partner.fields.logo.value %}
+                            <img
+                              class="vendor-logo"
+                              src="{{ matched_partner.fields.logo.value | image_url: 'x300' }}"
+                              alt="{{ vendor_name }}"
+                            >
+                          {% endif %}
+                        {% endif %}
                       </div>
                     </div>
 
