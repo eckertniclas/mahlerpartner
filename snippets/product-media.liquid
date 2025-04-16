@@ -103,6 +103,7 @@
   assign preorder_product = false
 
   for tag in product.tags
+    assign tags = tags | append: '|' | append: tag
     assign lowercase_tag = tag | downcase
     if lowercase_tag contains preorder_string
       assign preorder_product = true
@@ -126,7 +127,7 @@
 </safe-load-scripts>
 
 <script>
-  /* {{ custom_badge }} */
+  /* {{ tags }} */
   debugger;
 </script>
 
