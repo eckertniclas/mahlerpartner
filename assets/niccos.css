@@ -13,5 +13,5 @@
 }
 
 [data-product-badge]:has(.custom-badge) > :first-child {
-  margin-right: 0.25rem;
+  margin-right: 0.5rem;
 }
