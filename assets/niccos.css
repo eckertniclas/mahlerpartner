@@ -8,10 +8,10 @@
   height: 70px;
 }
 
-data-product-badge:has(.custom-badge) {
+[data-product-badge]:has(.custom-badge) {
   display: flex;
 }
 
-data-product-badge:has(.custom-badge) > :first-child {
+[data-product-badge]:has(.custom-badge) > :first-child {
   margin-right: 0.25rem;
 }
