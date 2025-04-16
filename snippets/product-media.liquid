@@ -103,7 +103,6 @@
   assign preorder_product = false
 
   for tag in product.tags
-    assign tags = tags | append: '|' | append: tag
     assign lowercase_tag = tag | downcase
     if lowercase_tag contains preorder_string
       assign preorder_product = true
@@ -126,11 +125,6 @@
   <script src="{{ 'component-product-media.js' | asset_url }}" defer="defer" type="module" data-flow-load-key="product-media"></script>
 </safe-load-scripts>
 
-<script>
-  /* {{ tags }} */
-  debugger;
-</script>
-
 {% if settings.show_badges %}
   {% capture product_badge %}
     {% if product != blank %}
@@ -143,16 +137,18 @@
           {% render 'badge' with badge: 'sale', badge_product: product, use_variant: true %}
         {% endif %}
       {% else %}
+        {% render 'badge' with badge: 'sold-out', badge_product: product %}
+        
         {% if custom_badge %}
           {% render 'badge' with badge: 'custom', custom_badge: custom_badge %}
         {% endif %}
-        {% render 'badge' with badge: 'sold-out', badge_product: product %}
       {% endif %}
     {% else %}
+      {% render 'badge' with badge: 'sold-out' %}
+      
       {% if custom_badge %}
         {% render 'badge' with badge: 'custom', custom_badge: custom_badge %}
       {% endif %}
-      {% render 'badge' with badge: 'sold-out' %}
     {% endif %}
   {% endcapture %}
 {% endif %}
