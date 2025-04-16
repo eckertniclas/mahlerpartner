@@ -220,32 +220,63 @@
                       style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
                       {{ block.shopify_attributes }}
                     >
-                      {% assign vendor_name = product.vendor | strip %}
-                      {% assign all_partners = shop.metaobjects.partnerlogos %}
+                      {%- comment -%}
+  Debugging the vendor logo matching logic
+{%- endcomment -%}
 
-                      <div class="product-details-wrapper">
-                        <h1 class="product-details-product-title">
-                          {{ product.title | escape }}
-                        </h1>
+{% assign vendor_name = product.vendor | strip %}
+{%- comment -%}
+  Debug: Checking the vendor name
+  vendor_name = {{ vendor_name }}
+{%- endcomment -%}
 
-                        {% if all_partners %}
-                          {%- comment -%}
-                            We match on fields.partner.value == product.vendor
-                          {%- endcomment -%}
-                          {% assign matched_partner = all_partners
-                            | where: 'fields.partner.value', vendor_name
-                            | first
-                          %}
+{% assign all_partners = shop.metaobjects.partnerlogos %}
+{%- comment -%}
+  Debug: Checking all partners metaobjects
+  all_partners = {{ all_partners | json }}
+{%- endcomment -%}
 
-                          {% if matched_partner and matched_partner.fields.logo.value %}
-                            <img
-                              class="vendor-logo"
-                              src="{{ matched_partner.fields.logo.value | image_url: 'x300' }}"
-                              alt="{{ vendor_name }}"
-                            >
-                          {% endif %}
-                        {% endif %}
-                      </div>
+<div class="product-details-wrapper">
+  <h1 class="product-details-product-title">
+    {{ product.title | escape }}
+  </h1>
+
+  {% if all_partners %}
+    {%- comment -%}
+      Debug: partner objects exist. Attempting to match partner.field == vendor_name
+    {%- endcomment -%}
+
+    {% assign matched_partner = all_partners
+      | where: 'fields.partner.value', vendor_name
+      | first
+    %}
+
+    {%- comment -%}
+      Debug: matched_partner = {{ matched_partner | json }}
+      (If "null", no metaobject was found.)
+    {%- endcomment -%}
+
+    {% if matched_partner and matched_partner.fields.logo.value %}
+      {%- comment -%}
+        Debug: Found match with partner = {{ matched_partner.fields.partner.value }}
+        and logo = {{ matched_partner.fields.logo.value }}
+      {%- endcomment -%}
+      <img
+        class="vendor-logo"
+        src="{{ matched_partner.fields.logo.value | image_url: 'x300' }}"
+        alt="{{ vendor_name }}"
+      >
+    {% else %}
+      {%- comment -%}
+        Debug: Either no matched_partner or no .fields.logo.value
+      {%- endcomment -%}
+    {% endif %}
+  {% else %}
+    {%- comment -%}
+      Debug: No partners found in "shop.metaobjects.partnerlogos"
+    {%- endcomment -%}
+  {% endif %}
+</div>
                     </div>
 
                   {% when 'separator' %}
