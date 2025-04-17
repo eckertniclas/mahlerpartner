@@ -21,6 +21,13 @@
             "footer_linklist": "footer"
           }
         },
+        "menu_3drpHm": {
+          "type": "menu",
+          "settings": {
+            "menu_title": "Hersteller",
+            "footer_linklist": "footer"
+          }
+        },
         "social": {
           "type": "social",
           "settings": {
@@ -31,7 +38,7 @@
           "type": "newsletter",
           "settings": {
             "newsletter_title": "Newsletter",
-            "footer_newsletter_description": "<p>Be the first to know about our biggest and best sales.</p>",
+            "footer_newsletter_description": "<p>Einfach hier für den Newsletter anmelden und nichts verpassen!</p>",
             "buttons_style": "filled",
             "override_button_colors": false,
             "button_background_color": "#e68819",
@@ -41,6 +48,7 @@
       },
       "block_order": [
         "menu",
+        "menu_3drpHm",
         "social",
         "newsletter"
       ],
