@@ -25,7 +25,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_font": "h1",
+            "title_font": "h2",
             "margin_bottom": 0
           }
         },
