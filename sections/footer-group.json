@@ -25,7 +25,7 @@
           "type": "menu",
           "settings": {
             "menu_title": "Hersteller",
-            "footer_linklist": "footer"
+            "footer_linklist": "hersteller"
           }
         },
         "social": {
