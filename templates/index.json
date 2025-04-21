@@ -79,7 +79,7 @@
         "image_HYaV36": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/85554BGC.jpg",
+            "desktop_image": "shopify://shop_images/85757-Detail-2.jpg",
             "desktop_position": "md-min-align-bottom md-min-justify-left",
             "mobile_position": "md-max-align-bottom md-max-justify-left",
             "heading": "Bulldozer",
@@ -97,7 +97,7 @@
         "image_78ytmV": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/10653.jpg",
+            "desktop_image": "shopify://shop_images/USK-10660-7.jpg",
             "desktop_position": "md-min-align-bottom md-min-justify-left",
             "mobile_position": "md-max-align-bottom md-max-justify-left",
             "heading": "Trecker",
@@ -115,7 +115,7 @@
         "image_ANqxt3": {
           "type": "image",
           "settings": {
-            "desktop_image": "shopify://shop_images/85651.jpg",
+            "desktop_image": "shopify://shop_images/85674L-Detail-3.jpg",
             "desktop_position": "md-min-align-bottom md-min-justify-left",
             "mobile_position": "md-max-align-bottom md-max-justify-left",
             "heading": "Bergbau",
@@ -223,10 +223,10 @@
     "image_with_text_LFNDP7": {
       "type": "image-with-text",
       "settings": {
-        "image": "shopify://shop_images/CAT_Location_Oct_12_202317026_1_7ff94563-7d04-4cd9-9ae6-6372a3af8187.webp",
+        "image": "shopify://shop_images/85593BGC.jpg",
         "layout": "left",
-        "title": "Bild mit Text",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "title": "Limited Editions",
+        "text": "<p>Diecast Masters poduziert besondere Auflagen für Bauunternehmen, spezielle Anlässe und zu Ereignissen wie dem Caterpillar Centennial 2025. Wir bemühen uns, alle Sondermodelle für Sie in unserem Onlineshop anbieten zu können.</p>",
         "text_alignment": "center",
         "text_overlapping_image": false,
         "button_link": "",
@@ -244,10 +244,10 @@
     "image_with_text_gWgMfX": {
       "type": "image-with-text",
       "settings": {
-        "image": "shopify://shop_images/CAT_Location_Oct_12_202317459.jpg",
+        "image": "shopify://shop_images/20250405_165019765_iOS.heic",
         "layout": "right",
-        "title": "Bild mit Text",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "title": "Direkter geht es nicht",
+        "text": "<p>Mahler + Partner ist als Europa-Importeur von Diecast Masters und als Inhaber von USK Models in ständigem Kontakt mit den Designern und Entwicklern. Auch zu den Herstellern der Originalfahrzeuge pflegen wir ein enges Verhältnis. Dadurch haben unsere Kunden den direkten Draht zu allem, was unsere Modelle betrifft.</p>",
         "text_alignment": "center",
         "text_overlapping_image": false,
         "button_link": "",
