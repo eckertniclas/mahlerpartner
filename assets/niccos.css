@@ -5,7 +5,8 @@
 }
 
 .product-details-wrapper img {
-  height: 70px;
+  max-width: 100px;
+  height: auto;
 }
 
 [data-product-badge]:has(.custom-badge) {
