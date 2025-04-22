@@ -229,7 +229,7 @@
                         </h1>
                         {% assign image = product.metafields.custom.partnerlogos.value.logo.value %}
                         {% if image %}
-                          {{ image | image_url: width: image.width | image_tag: class: 'vendor-logo' }}
+                          {{ image | image_url: width: 100 | image_tag: class: 'vendor-logo' }}
                         {% endif %}
                       </div>
                     </div>
