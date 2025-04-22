@@ -58,7 +58,7 @@
             "desktop_image": "shopify://shop_images/Youtube.jpg",
             "desktop_position": "md-min-align-center md-min-justify-left",
             "mobile_position": "md-max-align-center md-max-justify-left",
-            "heading": "Youtube",
+            "heading": "",
             "heading_size": 28,
             "url": "",
             "button_label": "Youtube",
