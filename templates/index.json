@@ -42,8 +42,8 @@
         "image_F7RqmF"
       ],
       "settings": {
-        "desktop_height": "full_screen",
-        "mobile_height": "full_screen",
+        "desktop_height": "small",
+        "mobile_height": "medium",
         "slide_navigation_style": "bars",
         "slide_transition_delay": 7,
         "section_padding_top": 0,
