@@ -70,11 +70,6 @@
             <span class="stock-level-message">
               {% render 'icon-dot' with class: 'success', dot_pulsing: animate_pulsing_dot %}
               {% assign stock_count = '' %}
-              {% if show_stock_count %}
-                {% capture stock_count %}
-                  <span>&nbsp;-&nbsp;</span>
-                {% endcapture %}
-              {% endif %}
               {% if preorder_product %}
                 <p class="level-indicator-message">{{ preorder_message | default: preorder_string | append: stock_count }}</p>
               {% else %}
