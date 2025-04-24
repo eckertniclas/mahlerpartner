@@ -72,7 +72,7 @@
               {% assign stock_count = '' %}
               {% if show_stock_count %}
                 {% capture stock_count %}
-                  <span>&nbsp;-&nbsp;</span> <span data-flow-stock-count="variant_stock_count">{{ inventory_variant.inventory_quantity }}</span>
+                  <span>&nbsp;-&nbsp;</span>
                 {% endcapture %}
               {% endif %}
               {% if preorder_product %}
