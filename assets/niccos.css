@@ -17,6 +17,6 @@
   margin-right: 0.5rem;
 }
 
-.product-page__policies.rte text-link-animated {
+.product-page__policies.rte.text-link-animated {
   font-size:12px;
 }
