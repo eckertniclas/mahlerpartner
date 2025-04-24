@@ -133,12 +133,25 @@
         "navigation_position": "center",
         "colors": "white"
       }
+    },
+    "custom_liquid_PwQiwy": {
+      "type": "custom-liquid",
+      "settings": {
+        "title": "",
+        "description": "",
+        "custom_liquid": "<div class=\"collection-header__description\" data-animate data-animate-order=\"{{ animation_order }}\">\n                    <div class=\"collection-header__text-item text-link-animated\">{{ collection.description }}</div>\n                  </div>",
+        "section_width": "content",
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "colors": "white"
+      }
     }
   },
   "order": [
     "collection-header-spotlight",
     "product-grid",
     "collage-builder-00",
-    "navigation_banner_hM7878"
+    "navigation_banner_hM7878",
+    "custom_liquid_PwQiwy"
   ]
 }
