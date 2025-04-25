@@ -146,6 +146,7 @@
             type="submit"
             name="add"
             class="btn product--add-to-cart-button{% if btn_id %} dynamic-section-button--{{ btn_id }}{% endif %}"
+            data-native-pre-order-btn data-starting-variant="{{ product.selected_or_first_available_variant.id }}"
             {%- if product.selected_or_first_available_variant.available == false -%}
               disabled
             {%- endif -%}
@@ -263,6 +264,7 @@
           type="submit"
           name="add"
           class="product-form__submit button button--full-width button--primary"
+          data-native-pre-order-btn data-starting-variant="{{ product.selected_or_first_available_variant.id }}"
           disabled
         >
           {{ 'products.product.sold_out' | t }}
