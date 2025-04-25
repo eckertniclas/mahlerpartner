@@ -150,10 +150,19 @@
     "ken_burns_enabled": true,
     "content_for_index": [],
     "blocks": {
-      "15393088698543645836": {
-        "type": "shopify://apps/essential-preorder/blocks/app-embed/bb7e7a06-2a82-4e7d-8984-c3918deb1c2a",
+      "5830052920240459932": {
+        "type": "shopify://apps/purple-dot-trusted-pre-order/blocks/app-embed-block/66fbb572-e304-4000-9eec-ce923e515d92",
         "disabled": false,
-        "settings": {}
+        "settings": {
+          "add_waitlist_info": false,
+          "quick_add_title": "",
+          "quick_add_size_selector": "",
+          "quick_add_button_selector": "",
+          "quick_add_disabled_class": "",
+          "collection_item_selector": "",
+          "hide": "",
+          "pdp_hide": ""
+        }
       }
     }
   },
