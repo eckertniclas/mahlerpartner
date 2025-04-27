@@ -120,7 +120,7 @@
             "open_close_icon": "plus_minus",
             "open_by_default": false,
             "icon": "car",
-            "text": "<p>Share some information about your product</p>",
+            "text": "<p>{{ product.metafields.custom.vorbild | metafield_tag }}</p>",
             "page": "",
             "margin_bottom": 30
           }
