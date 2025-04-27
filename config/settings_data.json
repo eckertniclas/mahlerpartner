@@ -148,23 +148,7 @@
     "animations_enabled": true,
     "page_fade_enabled": true,
     "ken_burns_enabled": true,
-    "content_for_index": [],
-    "blocks": {
-      "5830052920240459932": {
-        "type": "shopify://apps/purple-dot-trusted-pre-order/blocks/app-embed-block/66fbb572-e304-4000-9eec-ce923e515d92",
-        "disabled": true,
-        "settings": {
-          "add_waitlist_info": false,
-          "quick_add_title": "",
-          "quick_add_size_selector": "",
-          "quick_add_button_selector": "",
-          "quick_add_disabled_class": "",
-          "collection_item_selector": "",
-          "hide": "",
-          "pdp_hide": ""
-        }
-      }
-    }
+    "content_for_index": []
   },
   "presets": {
     "Nourish": {
