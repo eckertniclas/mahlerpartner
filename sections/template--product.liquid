@@ -253,18 +253,22 @@
                       {{ block.shopify_attributes }}
                     >
                       <div class="product-price-size--{{ block.settings.price_font }} product-price-group">
-                        {% if on_sale %}
-                          <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
-                          <p
-                            id="ComparePrice"
-                            class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}"
-                          >
-                            <span class="money">{{ variant_compare_at_price }}</span>
-                          </p>
-                        {% endif %}
+                        {% if current_variant.price == 0 %}
+                          <p class="product-price-unknown">Preis noch nicht bekannt</p>
+                        {% else %}
+                          {% if on_sale %}
+                            <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+                            <p
+                              id="ComparePrice"
+                              class="compare-at-price sale-price{% if on_sale %} on-sale{% else %} js{% endif %}"
+                            >
+                              <span class="money">{{ variant_compare_at_price }}</span>
+                            </p>
+                          {% endif %}
 
-                        {% render 'product-pricing', current_variant: current_variant %}
-                        {% render 'unit-price-measurement-variant', variant: current_variant %}
+                          {% render 'product-pricing', current_variant: current_variant %}
+                          {% render 'unit-price-measurement-variant', variant: current_variant %}
+                        {% endif %}
                       </div>
 
                       {%- liquid
