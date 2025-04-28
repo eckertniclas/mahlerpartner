@@ -101,6 +101,18 @@
             "margin_bottom": 0
           }
         },
+        "collapsible_tab_K8Q6EB": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "Sicherheitshinweise",
+            "open_close_icon": "plus_minus",
+            "open_by_default": false,
+            "icon": "info",
+            "text": "",
+            "page": "",
+            "margin_bottom": 30
+          }
+        },
         "collapsible_tab_dcAxQT": {
           "type": "collapsible-tab",
           "settings": {
@@ -136,6 +148,7 @@
         "2f3ddc8d-6514-403d-a884-88c9a0294300",
         "buy_buttons",
         "a55b9011-1b1a-4353-9d97-7bdcd60949f2",
+        "collapsible_tab_K8Q6EB",
         "collapsible_tab_dcAxQT",
         "collapsible_tab_anWGBb"
       ],
