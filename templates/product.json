@@ -132,7 +132,7 @@
             "open_close_icon": "plus_minus",
             "open_by_default": false,
             "icon": "info",
-            "text": "<p>{{ product.metafields.custom.herstellerdaten.value.diecast_masters | metafield_tag }}</p>",
+            "text": "<p>{{ product.metafields.custom.herstellerdaten.value.herstellerdaten | metafield_tag }}</p>",
             "page": "",
             "margin_bottom": 30
           }
