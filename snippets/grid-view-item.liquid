@@ -242,7 +242,7 @@
     {% endif %}
 
     {%- assign current_variant = product.selected_or_first_available_variant -%}
-     <p>{{ product.vendor }}-{{ current_variant.sku }}</p>
+     <p>{{ product.vendor }} {{ current_variant.sku }}</p>
 
     {% if settings.show_product_rating %}
       {% render 'reviews-star-rating' with
