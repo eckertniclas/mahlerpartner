@@ -127,7 +127,7 @@
         "main_linklist": "main-menu",
         "dropdown_alignment": "left",
         "mobile_social_icons": false,
-        "show_currency_selector": true,
+        "show_currency_selector": false,
         "show_locale_selector": true,
         "show_icons": true,
         "enable_search": true,
