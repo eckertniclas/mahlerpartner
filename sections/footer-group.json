@@ -64,7 +64,7 @@
         "show_methods_of_payment": true,
         "center_content_on_desktop": true,
         "footer_text": "",
-        "show_currency_selector": true,
+        "show_currency_selector": false,
         "show_locale_selector": false,
         "color_scheme": "dark"
       }
