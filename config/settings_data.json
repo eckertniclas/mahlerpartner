@@ -148,6 +148,8 @@
     "animations_enabled": true,
     "page_fade_enabled": true,
     "ken_burns_enabled": true,
+    "emptyprice": "Preis noch nicht verfügbar",
+    "b2bnotice": "zzgl. MwSt.",
     "content_for_index": []
   },
   "presets": {
