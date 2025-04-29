@@ -276,7 +276,6 @@
                             {%- assign netto_price = original_price | divided_by: 1.19 -%}
                             <p class="product-price">
                               {{ netto_price | money }}
-                              <span class="tax-note">(Netto)</span>
                             </p>
                           {% else %}
                             {% render 'product-pricing', current_variant: current_variant %}
@@ -297,7 +296,11 @@
                       {%- if show_tax_included or show_shipping_policy -%}
                         <div class="product-page__policies rte text-link-animated">
                           {%- if show_tax_included -%}
-                            {{ 'products.product.include_taxes' | t }}
+                            {% if customer.tags contains 'B2B' %}
+                              <span>zzgl. MwSt.</span>
+                            {% else %}
+                              {{ 'products.product.include_taxes' | t }}
+                            {% endif %}
                           {%- endif -%}
                           {%- if show_shipping_policy -%}
                             {% if product_price_cents >= threshold_in_cents %}
