@@ -254,7 +254,7 @@
                     >
                       <div class="product-price-size--{{ block.settings.price_font }} product-price-group">
                         {% if current_variant.price == 0 %}
-                          <p class="product-price-unknown">Preis noch nicht bekannt</p>
+                          <p class="product-price-unknown">{{ settings.emptyprice }}</p>
                         {% else %}
                           {% if on_sale %}
                             <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
