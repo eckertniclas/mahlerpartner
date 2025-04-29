@@ -17,7 +17,7 @@
         "show_title": true,
         "show_description": false,
         "show_image_desktop": true,
-        "min_height_desktop": "300",
+        "min_height_desktop": "450",
         "content_position": "center",
         "caption_width_desktop": 70,
         "show_image_mobile": true,
