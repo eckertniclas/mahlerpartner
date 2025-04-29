@@ -236,8 +236,16 @@
                           {{ product.title | escape }}
                         </h1>
                         {% assign image = product.metafields.custom.partnerlogos.value.logo.value %}
+                        {% assign link = product.metafields.custom.partnerlogos.value.link %}
+
                         {% if image %}
-                          {{ image | image_url: width: 100 | image_tag: class: 'vendor-logo' }}
+                          {% if link %}
+                            <a href="{{ link }}" target="_blank" rel="noopener">
+                              {{ image | image_url: width: 100 | image_tag: class: 'vendor-logo' }}
+                            </a>
+                          {% else %}
+                            {{ image | image_url: width: 100 | image_tag: class: 'vendor-logo' }}
+                          {% endif %}
                         {% endif %}
                       </div>
                     </div>
