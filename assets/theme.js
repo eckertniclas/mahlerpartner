@@ -21313,10 +21313,10 @@ let RightDrawer = (_dec = vue_class_component_esm({
           let temp_price = temp.price;
           if (currencyCode && showCurrencyCode == 'true') {
             temp.price = `${this.theme.formatMoney(temp_price)} ${currencyCode}`;
-            temp.b2bPrice = `${this.theme.formatMoney((temp_price*1.19) * 100)} ${currencyCode}`;
+            temp.b2bPrice = `${this.theme.formatMoney((temp_price/1.19) * 100)} ${currencyCode}`;
           } else {
             temp.price = this.theme.formatMoney(temp_price);
-            temp.b2bPrice = this.theme.formatMoney((temp_price*1.19) * 100);
+            temp.b2bPrice = this.theme.formatMoney((temp_price/1.19) * 100);
           }
         }
         return temp;
