@@ -297,7 +297,7 @@
                         <div class="product-page__policies rte text-link-animated">
                           {%- if show_tax_included -%}
                             {% if customer.tags contains 'B2B' %}
-                              <span>zzgl. MwSt.</span>
+                              <span>{{ settings.b2bnotice }}</span>
                             {% else %}
                               {{ 'products.product.include_taxes' | t }}
                             {% endif %}
