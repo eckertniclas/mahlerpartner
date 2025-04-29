@@ -256,6 +256,9 @@
                     {%- liquid
                       assign on_sale = false
                       assign compare_price = 0
+
+                      assign item_final_price = item.final_price
+
                       if item.variant.compare_at_price > item.original_price
                         assign on_sale = true
                         assign compare_price = item.variant.compare_at_price
@@ -265,10 +268,21 @@
                         assign compare_price = item.original_price
                       endif
 
+                      if customer.tags contains "B2B"
+                        assign compare_price = compare_price | divided_by: 1.19
+                        assign item_final_price = item_final_price | divided_by: 1.19
+                      endif
+
                       if on_sale
                         assign total_compare_price = compare_price | times: item.quantity
                       else
-                        assign total_compare_price = item.original_price | times: item.quantity
+                        assign originl_price = item.original_price
+
+                        if customer.tags contains "B2B"
+                          assign original_price = original_price | divided_by: 1.19
+                        endif
+
+                        assign total_compare_price = original_price | times: item.quantity
                       endif
                       assign cart_compare_price = cart_compare_price | plus: total_compare_price
                       assign price_font = 'product-grid--price-font-' | append: settings.type_card_price_font
@@ -279,7 +293,7 @@
                         <span class="cart-drawer__product-card--price--compare">{{ compare_price | money | replace: ' ', '&nbsp;' }}</span>
                         <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
                       {% endif %}
-                      <span class="{% if on_sale %}cart-drawer__product-card--price--sale{% endif %}">{{ item.final_price | money | replace: ' ', '&nbsp;' }}</span>
+                      <span class="{% if on_sale %}cart-drawer__product-card--price--sale{% endif %}">{{ item_final_price | money | replace: ' ', '&nbsp;' }}</span>
                     </div>
                   </div>
 

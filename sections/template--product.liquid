@@ -72,9 +72,11 @@
   endif
 
   if customer.tags contains 'B2B'
-    assign amount_off = current_variant.compare_at_price | times: 0.19
-    assign left_over = current_variant.compare_at_price | minus: amount_off
-    assign variant_compare_at_price = left_over | money
+    # assign amount_off = current_variant.compare_at_price | times: 0.19
+    # assign left_over = current_variant.compare_at_price | minus: amount_off
+    # assign variant_compare_at_price = left_over | money
+
+    assign variant_compare_at_price = current_variant.compare_at_price | divided_by: 1.19 | money
   endif
 %}
 

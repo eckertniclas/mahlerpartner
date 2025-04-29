@@ -69,14 +69,17 @@
   endif
 
   if customer.tags contains 'B2B'
+    # assign amount_off = target.price | times: 0.19
+    # assign left_over = target.price | minus: amount_off
+    # assign target_price = left_over | money | replace: ' ', '&nbsp;'
 
-    assign amount_off = target.price | times: 0.19
-    assign left_over = target.price | minus: amount_off
-    assign target_price = left_over | money | replace: ' ', '&nbsp;'
+    assign target_price = target.price | divided_by: 1.19 | money | replace: ' ', '&nbsp;'
     
-    assign amount_off = target.compare_at_price | times: 0.19
-    assign left_over = target.compare_at_price | minus: amount_off
-    assign target_compare_at_price = left_over | money | replace: ' ', '&nbsp;'
+    # assign amount_off = target.compare_at_price | times: 0.19
+    # assign left_over = target.compare_at_price | minus: amount_off
+    # assign target_compare_at_price = left_over | money | replace: ' ', '&nbsp;'
+
+    assign target_compare_at_price = target.compare_at_price | divided_by: 1.19 | money | replace: ' ', '&nbsp;'
   endif
 %}
 

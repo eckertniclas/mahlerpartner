@@ -6,9 +6,11 @@
   endif
 
   if customer.tags contains 'B2B'
-    assign amount_off = current_variant.price | times: 0.19
-    assign left_over = current_variant.price | minus: amount_off
-    assign current_variant_price = left_over | money
+    # assign amount_off = current_variant.price | times: 0.19
+    # assign left_over = current_variant.price | minus: amount_off
+    # assign current_variant_price = left_over | money
+
+    assign current_variant_price = current_variant.price | divided_by: 1.19 | money
   endif
 %}
 
