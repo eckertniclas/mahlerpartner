@@ -1685,6 +1685,12 @@
         "id": "emptyprice",
         "label": "Wording for 0€",
         "info": "Text on Product if Price not available"
+      },
+      {
+        "type": "text",
+        "id": "b2bnotice",
+        "label": "Net Price Information",
+        "info": "Notice below Price if no Tax"
       }
     ]
   },
