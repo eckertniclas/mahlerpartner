@@ -64,8 +64,19 @@
     assign target_price = target.price | money_with_currency
     assign target_compare_at_price = target.compare_at_price | money_with_currency
   else
-    assign target_price = target.price | money | replace: ' ', '&nbsp;'
+    assign target_price = target.price | money
     assign target_compare_at_price = target.compare_at_price | money | replace: ' ', '&nbsp;'
+  endif
+
+  if customer.tags contains 'B2B'
+
+    assign amount_off = target.price | times: 0.19
+    assign left_over = target.price | minus: amount_off
+    assign target_price = left_over | money | replace: ' ', '&nbsp;'
+    
+    assign amount_off = target.compare_at_price | times: 0.19
+    assign left_over = target.compare_at_price | minus: amount_off
+    assign target_compare_at_price = left_over | money | replace: ' ', '&nbsp;'
   endif
 %}
 

@@ -1691,7 +1691,13 @@
         "id": "b2bnotice",
         "label": "Net Price Information",
         "info": "Notice below Price if no Tax"
+      },
+      {
+        "type": "text",
+        "id": "b2b_discount_code",
+        "label": "Discount Code to apply",
+        "info": "Applies the selected discount code for B2B customers at checkout"
       }
     ]
-  },
+  }
 ]

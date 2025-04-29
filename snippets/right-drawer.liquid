@@ -87,7 +87,11 @@
                         </h5>
                         <div v-if="!result.available && group.name == 'Products'">{{ 'products.product.sold_out' | t }}</div>
                         {% if settings.predictive_search_show_price %}
-                        <div v-if="result.price" v-html="result.price"></div>
+                        {% if customer.tags contains 'B2B' %}
+                          <div v-if="result.price" v-html="result.b2bPrice"></div>
+                        {% else %}
+                          <div v-if="result.price" v-html="result.price"></div>
+                        {% endif %}
                         {% endif %}
                       </div>
                     </div>

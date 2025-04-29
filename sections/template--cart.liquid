@@ -318,6 +318,11 @@
 
             <div class="btn-wrapper-default cart--checkout-default">
               <input type="submit" name="update" class="btn btn--secondary update-cart cart--button-update btn--secondary" aria-label="{{ 'cart.general.update' | t }}" value="{{ 'cart.general.update' | t }}">
+
+              {% if customer.tags contains 'B2B' and settings.b2b_discount_code.size > 0 %}
+                <input type="hidden" name="discount" value="{{ settings.b2b_discount_code }}" />
+              {% endif %}
+
               <button type="submit" name="checkout" aria-label="{{ 'cart.general.checkout' | t }}" class="btn cart--button-checkout">{{ 'cart.general.checkout' | t }}</button>
             </div>
 

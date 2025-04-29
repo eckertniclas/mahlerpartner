@@ -484,6 +484,10 @@
                 {{ 'cart.general.view_cart' | t }}
               </a>
 
+              {% if customer.tags contains 'B2B' and settings.b2b_discount_code.size > 0 %}
+                <input type="hidden" name="discount" value="{{ settings.b2b_discount_code }}" form="CartDrawer-Form" />
+              {% endif %}
+
               <button
                 type="submit"
                 class="btn dynamic-section-button--drawer-filled cart-drawer__footer--button"

@@ -70,6 +70,12 @@
   else
     assign variant_compare_at_price = current_variant.compare_at_price | money
   endif
+
+  if customer.tags contains 'B2B'
+    assign amount_off = current_variant.compare_at_price | times: 0.19
+    assign left_over = current_variant.compare_at_price | minus: amount_off
+    assign variant_compare_at_price = left_over | money
+  endif
 %}
 
 <safe-load-scripts class="hidden">
@@ -272,15 +278,7 @@
                             | times: 1
                           -%}
 
-                          {% if customer.tags contains 'B2B' %}
-                            {%- assign netto_price = original_price | divided_by: 1.19 -%}
-                            <p class="product-price">
-                              {{ netto_price | money }}
-                            </p>
-                          {% else %}
-                            {% render 'product-pricing', current_variant: current_variant %}
-                          {% endif %}
-
+                          {% render 'product-pricing', current_variant: current_variant %}
                           {% render 'unit-price-measurement-variant', variant: current_variant %}
                         {% endif %}
                       </div>
