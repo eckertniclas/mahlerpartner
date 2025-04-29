@@ -236,7 +236,7 @@
                           {{ product.title | escape }}
                         </h1>
                         {% assign image = product.metafields.custom.partnerlogos.value.logo.value %}
-                        {% assign link = product.metafields.custom.partnerlogos.value.link %}
+                        {% assign link = product.metafields.custom.partnerlogos.value.url %}
 
                         {% if image %}
                           {% if link %}
