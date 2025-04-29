@@ -1676,5 +1676,16 @@
         "default": true
       }
     ]
-  }
+  },
+  {
+    "name": "B2B Logics",
+    "settings": [
+      {
+        "type": "text",
+        "id": "emptyprice",
+        "label": "Wording for 0€",
+        "info": "Text on Product if Price not available"
+      }
+    ]
+  },
 ]
