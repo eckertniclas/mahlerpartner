@@ -148,6 +148,7 @@
     "animations_enabled": true,
     "page_fade_enabled": true,
     "ken_burns_enabled": true,
+    "emptyprice": "Preis noch nicht bekannt",
     "content_for_index": []
   },
   "presets": {
