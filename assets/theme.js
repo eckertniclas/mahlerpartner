@@ -21257,7 +21257,7 @@ let RightDrawer = (_dec = vue_class_component_esm({
   get searchUrlWithQuery() {
     const languageParam = !this.languageUrl || this.languageUrl == '/' ? '' : this.languageUrl;
     if (this.isSearchPredictive) {
-      return `${languageParam}${this.searchUrl}?q=${encodeURIComponent(this.searchQuery)}&resources[limit]=3&resources[limit_scope]=each&resources[options][fields]=variants.sku`;
+      return `${languageParam}${this.searchUrl}?q=${encodeURIComponent(this.searchQuery)}&resources[limit]=3&resources[limit_scope]=each&resources[options][fields]=variants.sku,title,vendor`;
     } else {
       return `${languageParam}/search?q=${encodeURIComponent(this.searchQuery)}`;
     }
