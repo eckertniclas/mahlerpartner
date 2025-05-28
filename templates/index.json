@@ -174,7 +174,7 @@
             "heading_size": 30,
             "url": "shopify://collections/bagger",
             "button_label": "Jetzt kaufen",
-            "buttons_style": "filled",
+            "buttons_style": "outlined",
             "override_button_colors": true,
             "button_background_color": "#ffffff",
             "button_color": "#000000",
@@ -192,7 +192,7 @@
             "heading_size": 30,
             "url": "shopify://collections/radlader",
             "button_label": "Jetzt kaufen",
-            "buttons_style": "filled",
+            "buttons_style": "outlined",
             "override_button_colors": true,
             "button_background_color": "#ffffff",
             "button_color": "#000000",
@@ -212,8 +212,8 @@
             "button_label": "Jetzt kaufen",
             "buttons_style": "filled",
             "override_button_colors": true,
-            "button_background_color": "#ffffff",
-            "button_color": "#000000",
+            "button_background_color": "#242424",
+            "button_color": "#ffffff",
             "text_color": "#ffffff",
             "overlay_color": "rgba(0,0,0,0)"
           }
